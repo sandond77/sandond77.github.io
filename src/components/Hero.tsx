@@ -1,0 +1,107 @@
+import { lookingFor } from '../data/projects'
+
+export function Hero() {
+  return (
+    <header className="flex flex-col gap-9 pt-20 md:pt-28">
+      <div className="flex flex-col gap-6">
+        <p className="font-mono text-[0.6875rem] font-medium tracking-[0.16em] uppercase text-ink-3">
+          Product · Product Support · Operations
+        </p>
+
+        <h1 className="font-display font-extrabold text-[clamp(3rem,11vw,6.5rem)] leading-[0.9] tracking-[-0.035em] text-balance">
+          Sandon Du
+        </h1>
+
+        <p className="font-display font-semibold text-[clamp(1.0625rem,2.4vw,1.4375rem)] leading-snug tracking-[-0.01em] text-navy max-w-2xl text-balance">
+          Eight years in biotech manufacturing operations and technical implementation. Now I run
+          a trading card business and build the software it runs on.
+        </p>
+      </div>
+
+      {/*
+        The role target sits as a card inside the intro instead of a section after it,
+        which is also what earns the wider shell its second column.
+      */}
+      <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-14">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 text-[1.0625rem] leading-relaxed">
+            <p>
+              My background is in biotech manufacturing operations and technical implementation.
+              When R&amp;D or engineering developed something new, I was the one who rolled it out to
+              the manufacturing team: sourcing the equipment, writing the SOP, and standing next to
+              the operator who had to follow it. I supervised eight engineers at Nutcracker
+              Therapeutics and owned the ERP, LIMS and CMMS rollout the plant needed to run GMP. I
+              also spent a year teaching full-stack development at UC Berkeley Extension.
+            </p>
+            <p>
+              The projects below all came out of my own business, a card operation that has done
+              over $400k in lifetime sales. A spreadsheet that couldn't answer a question I needed
+              answered, pricing decisions I was making on a guess, an hour a week clicking through
+              PSA one cert at a time. I scoped and built each one, and then had to use it every
+              day.
+            </p>
+            <p className="text-ink-2">
+              Being both the operator and the person who built the tool means I never get to hand a
+              bad call off to someone else. That is the habit I would bring to a product or support
+              team.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-x-7 gap-y-2 font-mono text-[0.8125rem]">
+            <a
+              href="mailto:sandond77@gmail.com"
+              className="text-navy underline decoration-line hover:decoration-current underline-offset-4 transition-colors"
+            >
+              sandond77@gmail.com
+            </a>
+            <a
+              href="https://github.com/sandond77"
+              className="text-navy underline decoration-line hover:decoration-current underline-offset-4 transition-colors"
+            >
+              GitHub&#8202;&#8202;↗
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sandon-du/"
+              className="text-navy underline decoration-line hover:decoration-current underline-offset-4 transition-colors"
+            >
+              LinkedIn&#8202;&#8202;↗
+            </a>
+          </div>
+        </div>
+
+        <section
+          aria-labelledby="looking-for"
+          className="relative border border-line bg-surface px-6 pt-7 pb-6 md:px-8 md:pb-7"
+        >
+          <div className="foil-rule absolute inset-x-0 top-0 h-0.5 opacity-85" />
+
+          <div className="flex flex-col gap-3">
+            <p className="font-mono text-[0.625rem] font-bold tracking-[0.16em] uppercase text-ink-3">
+              What I'm looking for
+            </p>
+
+            <h2
+              id="looking-for"
+              className="font-display text-[1.25rem] font-extrabold tracking-[-0.02em] text-balance"
+            >
+              {lookingFor.headline}
+            </h2>
+
+            <p className="text-[0.9375rem] leading-relaxed text-ink-2">{lookingFor.body}</p>
+
+            <ul className="flex flex-wrap gap-x-2 gap-y-2 pt-1">
+              {lookingFor.tags.map((tag) => (
+                <li
+                  key={tag}
+                  className="border border-line bg-surface-2 px-2.5 py-1 font-mono text-[0.6875rem] tracking-[0.06em] text-ink-2"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
+    </header>
+  )
+}

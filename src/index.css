@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: an explicit choice on <html> wins over the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Palette: cool slab-acrylic paper, blue-biased ink, structural navy.
+  Label red is reserved for honest-constraint callouts — it is not an accent.
+*/
+:root {
+  --ground: #e9ecf1;
+  --surface: #ffffff;
+  --surface-2: #f3f5f9;
+  --ink: #131822;
+  --ink-2: #4e586e;
+  --ink-3: #838da3;
+  --line: #d2d8e2;
+  --line-soft: #e2e7ee;
+  --navy: #24406e;
+  --navy-lift: #34589a;
+  --label-red: #b3342b;
+  --foil: linear-gradient(
+    90deg,
+    #7fb8c8 0%,
+    #93a6da 28%,
+    #c09ec2 55%,
+    #d3bc8b 78%,
+    #7fb8c8 100%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --ground: #0c1017;
+    --surface: #141a24;
+    --surface-2: #1a2230;
+    --ink: #e3e9f2;
+    --ink-2: #a0aabd;
+    --ink-3: #6e7889;
+    --line: #26303f;
+    --line-soft: #1d2633;
+    --navy: #93b4e8;
+    --navy-lift: #b0c9f1;
+    --label-red: #e0796a;
+    --foil: linear-gradient(
+      90deg,
+      #4e7e8e 0%,
+      #5e6fa0 28%,
+      #8a6c8c 55%,
+      #97835b 78%,
+      #4e7e8e 100%
+    );
+  }
+}
+
+:root.dark {
+  --ground: #0c1017;
+  --surface: #141a24;
+  --surface-2: #1a2230;
+  --ink: #e3e9f2;
+  --ink-2: #a0aabd;
+  --ink-3: #6e7889;
+  --line: #26303f;
+  --line-soft: #1d2633;
+  --navy: #93b4e8;
+  --navy-lift: #b0c9f1;
+  --label-red: #e0796a;
+  --foil: linear-gradient(
+    90deg,
+    #4e7e8e 0%,
+    #5e6fa0 28%,
+    #8a6c8c 55%,
+    #97835b 78%,
+    #4e7e8e 100%
+  );
+}
+
+/* `inline` keeps the utilities pointing at the live vars, so a theme swap repaints. */
+@theme inline {
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-navy: var(--navy);
+  --color-navy-lift: var(--navy-lift);
+  --color-label-red: var(--label-red);
+
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Sticky header clearance for in-page jumps. */
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--navy-lift);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@utility foil-rule {
+  background: var(--foil);
+  background-size: 220% 100%;
+  background-position: 0% 0%;
+  transition: background-position 900ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foil-rule {
+    transition: none;
+  }
+}
