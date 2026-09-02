@@ -36,7 +36,7 @@ export const projects: Project[] = [
     kind: 'Inventory ERP',
     status: 'In active use',
     thesis:
-      'An inventory ERP that follows a card from the lot it was bought in to the sale that closed it out.',
+      'Follows a card from the lot it was bought in to the sale that closed it out.',
     index: 'Full purchase-to-sale lifecycle for raw cards and graded slabs, with cost basis that reconciles.',
     narrative: [
       'The business ran on a handful of Google Sheets and PSA CSV exports. They could tell me what I owned. They could not tell me what a specific slab had actually cost once its share of the raw lot and its grading fee were allocated back to it, or what a card show had netted after fees.',
@@ -86,9 +86,9 @@ export const projects: Project[] = [
     },
     feature: {
       label: 'Case study',
-      headline: 'Reactor: A Full-Lifecycle Inventory ERP for Trading Card Businesses',
+      headline: 'How it was scoped, modeled, and built',
       blurb:
-        'The long-form write-up behind this project — how the problem was scoped, the workflow map and wireframes that came before the build, and why the system ended up shaped the way it is.',
+        'The long-form write-up: the workflow map and wireframes that came before any code, and the reasoning behind the shape of the system.',
       cta: 'Read on Notion',
       href: 'https://maple-war-428.notion.site/Reactor-A-Full-Lifecycle-Inventory-ERP-for-Trading-Card-Businesses-80913d62715e4620844ea2fda6a7b522',
     },
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     name: 'CardCompanion',
     kind: 'Pricing tool',
     status: 'Live',
-    thesis: 'A pricing desk for card sellers: what the market is asking, and what it has actually paid.',
+    thesis: 'What the market is asking for a card, and what it has actually paid.',
     index: 'Turns a structured form into one precise eBay query, then splits the answer four ways.',
     narrative: [
       "Pricing a card before listing it means reading eBay twice — open listings for asking prices, completed listings for real comps — and eBay's search is fuzzy enough that a good share of what comes back is not your card. CardCompanion builds one precise query, then splits the answer four ways: active auction, active Buy It Now, sold auction, sold BIN.",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     name: 'PSA Scraper',
     kind: 'Internal tool',
     status: 'Maintained',
-    thesis: 'A double-clickable tool that pulls the scans for your own PSA submissions, by cert range.',
+    thesis: 'Pulls the scans for your own PSA submissions by cert range, without opening a terminal.',
     index: 'Downloads a whole submission of front and back scans, filed by cert, for someone who never opens a terminal.',
     narrative: [
       "When a grading submission comes back, the front and back scans for every cert live on PSA's site one page at a time. Listings need them, and so does Reactor. This pulls a whole submission in one pass: paste the order URL, give the cert ranges, pick a folder.",
