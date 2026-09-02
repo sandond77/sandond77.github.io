@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // Pages serves this repo from a subpath, so assets cannot be rooted at "/".
-  base: '/projectPortfolio/',
+  // User site (sandond77.github.io) is served from the domain root, so no base prefix.
+  base: '/',
   plugins: [react(), tailwindcss()],
 })
