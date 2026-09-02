@@ -32,12 +32,12 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.feature && (
           <a
             href={project.feature.href}
-            className="group/feat relative flex flex-col gap-2.5 border border-line bg-surface-2 px-5 pt-6 pb-5 md:px-7 transition-colors hover:bg-ground"
+            className="group/feat relative flex flex-col gap-3 border border-navy bg-ground px-5 pt-7 pb-6 md:px-7 transition-colors hover:bg-surface-2"
           >
-            <div className="foil-rule absolute inset-x-0 top-0 h-0.5 group-hover/feat:bg-[position:100%_0%]" />
+            <div className="foil-rule absolute inset-x-0 top-0 h-[3px] group-hover/feat:bg-[position:100%_0%]" />
 
-            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-              <span className="font-mono text-[0.625rem] font-bold tracking-[0.16em] uppercase text-navy">
+            <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+              <span className="bg-navy px-2 py-1 font-mono text-[0.625rem] font-bold tracking-[0.16em] uppercase text-ground">
                 {project.feature.label}
               </span>
               <span className="font-mono text-[0.75rem] text-navy underline decoration-line underline-offset-4 group-hover/feat:decoration-current transition-colors">
