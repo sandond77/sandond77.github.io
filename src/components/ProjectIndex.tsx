@@ -23,7 +23,12 @@ export function ProjectIndex() {
                 {project.name}
               </span>
               <span className="text-[0.9375rem] leading-snug text-ink-2">{project.index}</span>
-              <span className="font-mono text-[0.6875rem] tracking-[0.12em] uppercase text-ink-3">
+              <span className="flex items-center gap-2.5 font-mono text-[0.6875rem] tracking-[0.12em] uppercase text-ink-3">
+                {project.feature && (
+                  <span className="border border-line bg-surface-2 px-1.5 py-0.5 tracking-[0.1em] text-navy">
+                    {project.feature.label}
+                  </span>
+                )}
                 {project.kind}
               </span>
             </a>

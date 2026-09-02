@@ -28,6 +28,33 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.thesis}
         </p>
 
+        {/* Promoted artifact: sits above the metrics so it is the first thing after the pitch. */}
+        {project.feature && (
+          <a
+            href={project.feature.href}
+            className="group/feat relative flex flex-col gap-2.5 border border-line bg-surface-2 px-5 pt-6 pb-5 md:px-7 transition-colors hover:bg-ground"
+          >
+            <div className="foil-rule absolute inset-x-0 top-0 h-0.5 group-hover/feat:bg-[position:100%_0%]" />
+
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+              <span className="font-mono text-[0.625rem] font-bold tracking-[0.16em] uppercase text-navy">
+                {project.feature.label}
+              </span>
+              <span className="font-mono text-[0.75rem] text-navy underline decoration-line underline-offset-4 group-hover/feat:decoration-current transition-colors">
+                {project.feature.cta}&#8202;&#8202;↗
+              </span>
+            </div>
+
+            <p className="font-display text-[1.125rem] font-extrabold leading-snug tracking-[-0.02em] max-w-2xl text-balance">
+              {project.feature.headline}
+            </p>
+
+            <p className="text-[0.9375rem] leading-normal text-ink-2 max-w-[46rem]">
+              {project.feature.blurb}
+            </p>
+          </a>
+        )}
+
         {project.metrics && (
           <dl className="flex flex-wrap gap-x-9 border-y border-line-soft py-4">
             {project.metrics.map((metric) => (

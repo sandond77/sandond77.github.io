@@ -2,6 +2,14 @@ export type Decision = { title: string; body: string }
 export type Metric = { n: string; k: string }
 export type LogEntry = { when: string; what: string }
 export type Link = { label: string; href: string } | { label: string; note: true }
+/** A promoted artifact, rendered as a banner near the top of the project card. */
+export type Feature = {
+  label: string
+  headline: string
+  blurb: string
+  cta: string
+  href: string
+}
 
 export type Project = {
   id: string
@@ -16,6 +24,7 @@ export type Project = {
   metrics?: Metric[]
   constraint?: { label: string; body: string }
   log?: LogEntry[]
+  feature?: Feature
   spec: { role: string; stack: string; lastCommit: string }
   links: Link[]
 }
@@ -75,11 +84,15 @@ export const projects: Project[] = [
       stack: 'React + TypeScript (Vite), Express, PostgreSQL, Kysely, Google OAuth, Anthropic SDK',
       lastCommit: 'Aug 31, 2026',
     },
+    feature: {
+      label: 'Case study',
+      headline: 'Reactor: A Full-Lifecycle Inventory ERP for Trading Card Businesses',
+      blurb:
+        'The long-form write-up behind this project — how the problem was scoped, the workflow map and wireframes that came before the build, and why the system ended up shaped the way it is.',
+      cta: 'Read on Notion',
+      href: 'https://maple-war-428.notion.site/Reactor-A-Full-Lifecycle-Inventory-ERP-for-Trading-Card-Businesses-80913d62715e4620844ea2fda6a7b522',
+    },
     links: [
-      {
-        label: 'Case study',
-        href: 'https://maple-war-428.notion.site/Reactor-A-Full-Lifecycle-Inventory-ERP-for-Trading-Card-Businesses-80913d62715e4620844ea2fda6a7b522',
-      },
       { label: 'Repository', href: 'https://github.com/sandond77/reactorERP' },
       { label: 'Private deployment — walkthrough on request', note: true },
     ],
