@@ -41,10 +41,11 @@ export function Hero() {
               support Discord myself.
             </p>
             <p className="text-ink-2">
-              The coding predates both of those. I took the full-stack certificate at UC Berkeley
-              Extension in 2018, built a donation platform at a startup called SevaFund, and spent
-              a year back at Berkeley on the instructional staff teaching that curriculum. The
-              three projects below are mine end to end, and I still use all of them every week.
+              I have been writing code the whole time. I went through the full-stack development
+              program at UC Berkeley Extension in 2018 and stayed on for a year as instructional
+              staff, teaching the curriculum I had just finished. I have worked on a number of
+              projects since then, and the three below are the latest. I still use all of them
+              every week.
             </p>
           </div>
 
