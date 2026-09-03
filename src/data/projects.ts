@@ -67,10 +67,6 @@ export const projects: Project[] = [
         title: 'Built for more than one game',
         body: 'One Piece and Union Arena move through the same lifecycle as Pok\u00e9mon, and new games can be added as they come. Cards are tracked in more than one language as well, since the same card exists in Japanese and English printings.',
       },
-      {
-        title: 'A migration path in, not just data in',
-        body: 'A CSV import wizard maps whatever columns your existing spreadsheets already use.',
-      },
     ],
     metrics: [
       { n: '27', k: 'Screens' },
