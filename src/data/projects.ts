@@ -216,7 +216,7 @@ export const principles = [
 /** Role target — the first thing a recruiter needs to know, so it sits in the hero. */
 export const lookingFor = {
   headline: 'Product management, product support, or operations',
-  body: "I like building the processes and workflows a business runs on. Most of what improves them comes from the people actually using them. If someone is struggling with something I put in place, that is on me, and it usually means I did not talk to them enough before I built it. It is easy to get lost in development and lose sight of who it is for. I am comfortable working with engineers and just as comfortable breaking it down for leadership.",
+  body: "I like building out processes and workflows. Improvement comes from the actual end-users themselves and communication with them. If someone is struggling with something I put in place, that's not on them. It means that I need to do better and continue to improve what I've built or implemented. It is easy to get lost in development and lose sight of who it is for. I am comfortable working with engineers and just as comfortable breaking it down for leadership.",
   tags: [
     'Product manager',
     'APM',

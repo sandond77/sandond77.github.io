@@ -27,11 +27,11 @@ export function Hero() {
           <div className="flex flex-col gap-4 text-[1.0625rem] leading-relaxed">
             <p>
               I spent eight years in biotech manufacturing, first at Grifols and then at Nutcracker
-              Therapeutics. Most of it was implementation work. R&amp;D or engineering would develop
-              a new process and I was the one who got it running on the floor, which meant sourcing
-              the equipment, writing the SOP, and training the operators who had to live with it.
-              By the end I was supervising eight engineers and owned the ERP, LIMS and CMMS rollout
-              the plant needed before it could run GMP.
+              Therapeutics. R&amp;D/engineering would develop a new process and I was the one who
+              implemented it. This involved sourcing and testing the equipment, writing the SOPs,
+              and training new operators to use it. If there was an issue with the process or
+              equipment, I was readily available to help troubleshoot and diagnose the problem. By
+              the end, I was supervising eight engineers and managing the day-to-day operations.
             </p>
             <p>
               Somewhere in there I started buying and selling graded cards. That became SD Slabs,
@@ -41,11 +41,10 @@ export function Hero() {
               support Discord myself.
             </p>
             <p>
-              I have been writing code the whole time. I went through the full-stack development
-              program at UC Berkeley Extension in 2018 and stayed on for a year as instructional
-              staff, teaching the curriculum I had just finished. I have worked on a number of
-              projects since then, and the three below are the latest. I still use all of them
-              every week.
+              Reactor was built on what I learned in the full-stack development program at UC
+              Berkeley Extension in 2018. I stayed there for a year as instructional staff. I
+              have worked on a number of projects since then, and the three below are the latest.
+              I still use all of them every week.
             </p>
           </div>
 
