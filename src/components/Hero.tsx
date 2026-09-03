@@ -34,11 +34,13 @@ export function Hero() {
               the end, I was supervising eight engineers and managing the day-to-day operations.
             </p>
             <p>
-              Somewhere in there I started buying and selling graded cards. That became SD Slabs,
-              which has done a bit over $400k in lifetime sales. It ran on spreadsheets until it
-              stopped scaling, so I mapped the workflow, drew the wireframes, and built Reactor to
-              replace them. Ten other sellers are on it in closed beta now, and I answer the
-              support Discord myself.
+              I started collecting trading cards around the same time I started working, but it
+              wasn't until 2023 that I turned it into a side business, SDSlabs, which has since
+              done a bit over $400k in lifetime sales. Everything from inventory management to
+              sales logs was done in spreadsheets. Once they stopped scaling, I mapped out the
+              various workflows that captured the lifecycle of cards and drew the wireframes for
+              what would eventually become Reactor, an inventory system for trading cards. Ten
+              other sellers are on it in closed beta now, and I answer the support Discord myself.
             </p>
             <p>
               Reactor was built on what I learned in the full-stack development program at UC
