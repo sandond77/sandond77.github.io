@@ -40,7 +40,7 @@ export function Hero() {
               replace them. Ten other sellers are on it in closed beta now, and I answer the
               support Discord myself.
             </p>
-            <p className="text-ink-2">
+            <p>
               I have been writing code the whole time. I went through the full-stack development
               program at UC Berkeley Extension in 2018 and stayed on for a year as instructional
               staff, teaching the curriculum I had just finished. I have worked on a number of
