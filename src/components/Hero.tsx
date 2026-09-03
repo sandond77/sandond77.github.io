@@ -26,24 +26,25 @@ export function Hero() {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4 text-[1.0625rem] leading-relaxed">
             <p>
-              My background is in biotech manufacturing operations and technical implementation.
-              When R&amp;D or engineering developed something new, I was the one who rolled it out to
-              the manufacturing team: sourcing the equipment, writing the SOP, and standing next to
-              the operator who had to follow it. I supervised eight engineers at Nutcracker
-              Therapeutics and owned the ERP, LIMS and CMMS rollout the plant needed to run GMP. I
-              also spent a year teaching full-stack development at UC Berkeley Extension.
+              I spent eight years in biotech manufacturing, first at Grifols and then at Nutcracker
+              Therapeutics. Most of it was implementation work. R&amp;D or engineering would develop
+              a new process and I was the one who got it running on the floor, which meant sourcing
+              the equipment, writing the SOP, and training the operators who had to live with it.
+              By the end I was supervising eight engineers and owned the ERP, LIMS and CMMS rollout
+              the plant needed before it could run GMP.
             </p>
             <p>
-              The projects below all came out of my own business, a card operation that has done
-              over $400k in lifetime sales. A spreadsheet that couldn't answer a question I needed
-              answered, pricing decisions I was making on a guess, an hour a week clicking through
-              PSA one cert at a time. I scoped and built each one, and then had to use it every
-              day.
+              Somewhere in there I started buying and selling graded cards. That became SD Slabs,
+              which has done a bit over $400k in lifetime sales. It ran on spreadsheets until it
+              stopped scaling, so I mapped the workflow, drew the wireframes, and built Reactor to
+              replace them. Ten other sellers are on it in closed beta now, and I answer the
+              support Discord myself.
             </p>
             <p className="text-ink-2">
-              Being both the operator and the person who built the tool means I never get to hand a
-              bad call off to someone else. That is the habit I would bring to a product or support
-              team.
+              The coding predates both of those. I took the full-stack certificate at UC Berkeley
+              Extension in 2018, built a donation platform at a startup called SevaFund, and spent
+              a year back at Berkeley on the instructional staff teaching that curriculum. The
+              three projects below are mine end to end, and I still use all of them every week.
             </p>
           </div>
 
