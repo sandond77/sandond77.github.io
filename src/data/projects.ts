@@ -216,7 +216,7 @@ export const principles = [
 /** Role target — the first thing a recruiter needs to know, so it sits in the hero. */
 export const lookingFor = {
   headline: 'Product management, product support, or operations',
-  body: "I want to own what gets built and why, and I am just as happy on the side that answers for it afterwards. I have done both for a business I run myself: mapping the workflow, wireframing it, building it, then working the support queue when it turns out wrong. The eight years of manufacturing before that mean I can read an operation quickly and hold my own with engineers.",
+  body: "I like building the processes and workflows a business runs on. Most of what improves them comes from the people actually using them. If someone is struggling with something I put in place, that is on me, and it usually means I did not talk to them enough before I built it. It is easy to get lost in development and lose sight of who it is for. I am comfortable working with engineers and just as comfortable breaking it down for leadership.",
   tags: [
     'Product manager',
     'APM',
