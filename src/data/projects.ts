@@ -39,7 +39,7 @@ export const projects: Project[] = [
       'Follows a card from the lot it was bought in to the sale that closed it out.',
     index: 'Full purchase-to-sale lifecycle for raw cards and graded slabs, with cost basis that reconciles.',
     narrative: [
-      'The business ran on a handful of Google Sheets and PSA CSV exports. They could tell me what I owned. They could not tell me what a specific slab had actually cost once its share of the raw lot and its grading fee were allocated back to it, or what a card show had netted after fees.',
+      'My trading card business ran on several Google Sheets that had some light automation. These sheets did not communicate with each other and required manual reconciliation. I was connecting sales to raw card costs and their associated grading fees.',
       'Every card carries the purchase ID of the lot it came from. Raw inventory moves through intake, inspection, then a routing decision: sell it raw, or send it in for grading. Grading is modeled as a transformation of that same card instead of the creation of a new one, so its cost follows it across the boundary.',
     ],
     decisions: [
@@ -60,16 +60,16 @@ export const projects: Project[] = [
         body: 'A Claude agent runs the whole lifecycle through multi-turn chat: purchases, sales, grading submissions, and slab and receipt image parsing. It asks when a request is ambiguous, confirms multi-quantity changes before writing them, and logs every action to an audit trail.',
       },
       {
-        title: 'Built for more than one operator',
-        body: 'Organizations and shared access were in from the start, with every query scoped to the owning account.',
+        title: 'Each operator has their own inventory',
+        body: "Every query is scoped to the owning account, so one seller never sees another seller's numbers. Teams sit on top of that, so a shop running with more than one person can work the same operation.",
+      },
+      {
+        title: 'Built for more than one game',
+        body: 'One Piece and Union Arena move through the same lifecycle as Pok\u00e9mon, and new games can be added as they come. Cards are tracked in more than one language as well, since the same card exists in Japanese and English printings.',
       },
       {
         title: 'A migration path in, not just data in',
         body: 'A CSV import wizard maps whatever columns your existing spreadsheets already use.',
-      },
-      {
-        title: 'Money in integer cents',
-        body: 'USD and JPY, both stored as integers. A rounding error in a cost basis is miserable to track down six months later.',
       },
     ],
     metrics: [
